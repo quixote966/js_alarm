@@ -30,7 +30,7 @@
           <form id="alarmForm">
             <input type="number" min="0" max="23" value="0" required name="hour" form="alarmForm" class="alarm-input"/>:
             <input type="number" min="0" max="59" value="0" required name="minute" form="alarmForm" class="alarm-input"/>
-            <button form="alarmForm" type="button" class="alarm-btn set-btn" onclick="setAlarm(this.form.hour.value,this.form.minute.value);">SET ALARM</button>
+            <button form="alarmForm" id="addAlarm" type="submit" class="alarm-btn set-btn">SET ALARM</button>
             </form>
         </div>
       </div>
