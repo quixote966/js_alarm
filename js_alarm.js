@@ -39,10 +39,15 @@ function AlarmView(time,alarmsDiv) {
 	this.elem = document.createElement('div');
 	this.elem.classList.add('alarm_view');
 	this.elem.textContent = time.toLocaleTimeString("en-US");
+	button = document.createElement('button');
+	button.textContent = "CLEAR";
+	button.disabled = true;
+	button.classList.add('alarm_form');
+	this.elem.appendChild(button);
 	alarmsDiv.appendChild(this.elem);
 	
 	this.fire = function() {
-		// TODO Make this do more. Also, prep the CSS
+		// TODO Add sound.
 		this.elem.classList.add('alarm_firing');
 	};
 	
